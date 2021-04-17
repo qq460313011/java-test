@@ -19,4 +19,10 @@ public class HomeController {
     public String helloWorld() {
         return "hello,world " + Instant.now();
     }
+
+    @GetMapping("/test1")
+    @ResponseBody
+    public String test1() {
+        return "test1";
+    }
 }
