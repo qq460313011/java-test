@@ -1,1 +1,14 @@
-rootProject.name = 'java-test'
+pluginManagement {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+        mavenLocal()
+        jcenter()
+    }
+
+    plugins {
+        id "co.uzzu.dotenv.gradle" version "${gradle_dotenv_version}"
+        id 'org.springframework.boot' version "${spring_boot_version}"
+        id 'io.spring.dependency-management' version "${spring_dependency_management_version}"
+    }
+}
