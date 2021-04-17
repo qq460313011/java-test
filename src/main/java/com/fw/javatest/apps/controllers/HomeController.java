@@ -17,8 +17,6 @@ public class HomeController {
     @GetMapping("/home")
     @ResponseBody
     public String helloWorld() {
-
-
         return "hello,world " + Instant.now();
     }
 }
